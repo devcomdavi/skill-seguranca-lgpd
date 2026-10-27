@@ -30,7 +30,7 @@ Desenhe o fluxo de dados em texto: navegador/app → API/server actions → banc
 | D – Negação de serviço | O que acontece com 10 mil requisições ou um arquivo enorme? | Rate limit, cotas, limites de tamanho, teto de gasto de IA |
 | E – Elevação de privilégio | Um usuário comum consegue virar admin? | RBAC no servidor, papel fora do alcance do cliente |
 
-Registre as decisões num `SECURITY.md` do projeto (curto): ameaças, controles escolhidos, riscos aceitos.
+Registre as decisões em `docs/07-seguranca-privacidade/modelo-de-ameacas.md` (curto): ameaças, controles escolhidos, riscos aceitos. Escolhas estruturais de segurança (provedor de auth, estratégia de multi-tenant, cifra de dados sensíveis) também viram ADR em `docs/06-decisoes/`.
 
 ## 3. Fundação do dia 1
 
@@ -44,7 +44,7 @@ Monte antes da primeira funcionalidade:
 - **Erros e logs:** tratador global, mensagens genéricas ao usuário, logger estruturado com redação de dados pessoais e segredos, trilha de auditoria para eventos de segurança. Medida 15 e `owasp-top10-2025.md` (A09, A10).
 - **Borda:** HTTPS com HSTS, cabeçalhos de segurança (CSP inicial), rate limit no login, cadastro, recuperação de senha e rotas de IA. Medidas 11, 18 e 19.
 - **Dependências:** lockfile commitado, Dependabot/Renovate, workflow de segurança no CI (ver `strix.md`, seção CI).
-- **LGPD:** inventário de dados iniciado (`docs/lgpd/inventario-dados.md`, ver `lgpd.md` §3), região de hospedagem escolhida, rascunho da política de privacidade.
+- **LGPD:** inventário de dados iniciado (`docs/07-seguranca-privacidade/inventario-dados.md`, ver `lgpd.md` §3), região de hospedagem escolhida, rascunho da política de privacidade.
 
 ## 4. Gatilhos durante a construção
 
@@ -85,4 +85,4 @@ Rode o modo B (pipeline de auditoria). Em produção, mantenha: Dependabot e wor
 
 ## 7. Memória do projeto
 
-Para que os gatilhos valham em todas as sessões do agente, registre no arquivo de instruções do projeto (`CLAUDE.md`, `AGENTS.md` ou equivalente) um resumo curto: a matriz de papéis, as regras "toda tabela com RLS", "toda rota com sessão, autorização por recurso e schema", "nenhum segredo no cliente", e onde ficam `SECURITY.md` e o inventário de dados.
+Para que os gatilhos valham em todas as sessões do agente, registre no arquivo de instruções do projeto (`CLAUDE.md`, `AGENTS.md` ou equivalente) um resumo curto: a matriz de papéis, as regras "toda tabela com RLS", "toda rota com sessão, autorização por recurso e schema", "nenhum segredo no cliente", e onde ficam o modelo de ameaças e o inventário de dados (`docs/07-seguranca-privacidade/`).

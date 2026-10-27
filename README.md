@@ -62,6 +62,10 @@ Basta pedir em linguagem natural, por exemplo: "audita a segurança e a LGPD des
 - Testes contra sistemas no ar (verificação de cabeçalhos, Strix) só devem ser feitos em sistemas próprios ou com autorização escrita, de preferência em staging.
 - O conteúdo sobre LGPD é orientação técnica, não parecer jurídico. Normas mudam: confirme o texto vigente na ANPD e no Planalto quando o ponto for decisivo.
 
+## Sequência de skills
+
+Esta skill faz parte de uma sequência para construir sistemas **legais, documentados e funcionais**. Ela compartilha a pasta `docs/` e os identificadores (RF, RNF, UC, ADR) com a [documentacao-sistema](https://github.com/devcomdavi/claude-skill-documentacao-sistema) e mantém `docs/07-seguranca-privacidade/`.
+
 ## Licença
 
 [MIT](LICENSE)

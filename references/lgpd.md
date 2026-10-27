@@ -50,7 +50,7 @@ Lei nº 13.709/2018 (LGPD) e regulamentos da ANPD, traduzidos em requisitos de p
 
 Controlador e operador devem manter registro das operações de tratamento. É também a base de tudo o resto (política, bases legais, retenção, resposta a incidente).
 
-Monte a partir de `scripts/mapear_dados_pessoais.py --md` e confirme com o usuário. Uma tabela por atividade de tratamento, guardada no repositório (ex.: `docs/lgpd/inventario-dados.md`) para evoluir com o código. Para cada atividade (cadastro, pagamento, suporte, marketing, analytics, IA): dados, titulares, finalidade, base legal, onde ficam (tabela/serviço/país), quem acessa, com quem é compartilhado, retenção, medidas de segurança.
+Monte a partir de `scripts/mapear_dados_pessoais.py --md` e confirme com o usuário. Uma tabela por atividade de tratamento, guardada no repositório (`docs/07-seguranca-privacidade/inventario-dados.md`) para evoluir com o código. Para cada atividade (cadastro, pagamento, suporte, marketing, analytics, IA): dados, titulares, finalidade, base legal, onde ficam (tabela/serviço/país), quem acessa, com quem é compartilhado, retenção, medidas de segurança.
 
 Fontes de dados pessoais esquecidas com frequência: logs, ferramentas de analytics e session replay, pixels de anúncio, e-mails transacionais, uploads, backups, planilhas exportadas, prompts enviados a IA, ferramentas de suporte e CRM, n8n/Make/Zapier.
 
