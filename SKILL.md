@@ -1,5 +1,5 @@
 ---
-name: seguranca-lgpd-vibecode
+name: skill-seguranca-lgpd
 description: Segurança da informação e conformidade com a LGPD para sistemas vibecodados, escrita para agentes de código como o Claude Code (sistemas feitos com IA em stacks como Supabase, Firebase, Next.js e Vercel). Use para construir um sistema seguro desde o início, para a auditoria final antes de publicar e para auditar e corrigir um sistema já pronto. Cobre OWASP Top 10 2025, OWASP LLM Top 10, chaves expostas, RLS, autenticação, dados pessoais, bases legais, direitos dos titulares, política de privacidade, incidentes à ANPD e pentest com Strix. Acione sempre que o usuário falar em segurança, auditoria, pentest, vulnerabilidade, LGPD, dados pessoais, privacidade, ANPD, "deixar pronto para produção" ou "meu app está seguro?", mesmo sem citar a skill.
 ---
 
@@ -139,7 +139,7 @@ Gere também, sob medida para o sistema e a partir do que foi levantado, os entr
 
 Documentos que dependem de decisões de negócio (finalidades, prazos de retenção, quem é o encarregado) saem com essas lacunas marcadas para o responsável preencher, nunca com valores inventados. Siga as regras do ambiente sobre o formato de entrega (documento, arquivo no repositório).
 
-**Onde salvar no repositório.** Os entregáveis ficam em `docs/07-seguranca-privacidade/`, a mesma estrutura da skill `documentacao-sistema`: `inventario-dados.md`, `modelo-de-ameacas.md`, `plano-resposta-incidentes.md` e `auditorias/AAAA-MM-DD.md` (relatório com data). A política de privacidade fica onde o produto a publica (página do site/app), com cópia de referência na mesma pasta. Se a documentação do projeto segue a skill `documentacao-sistema`, também: registre os requisitos de segurança e privacidade como RNF na categoria "Privacidade e segurança" do documento de requisitos, transforme decisões estruturais de segurança em ADR (`docs/06-decisoes/`) e marque as colunas pessoais no modelo de dados apontando para o inventário. Não duplique: o inventário é a fonte única de finalidade, base legal e retenção.
+**Onde salvar no repositório.** Os entregáveis ficam em `docs/07-seguranca-privacidade/`, a mesma estrutura da skill `skill-documentacao-sistema`: `inventario-dados.md`, `modelo-de-ameacas.md`, `plano-resposta-incidentes.md` e `auditorias/AAAA-MM-DD.md` (relatório com data). A política de privacidade fica onde o produto a publica (página do site/app), com cópia de referência na mesma pasta. Se a documentação do projeto segue a skill `skill-documentacao-sistema`, também: registre os requisitos de segurança e privacidade como RNF na categoria "Privacidade e segurança" do documento de requisitos, transforme decisões estruturais de segurança em ADR (`docs/06-decisoes/`) e marque as colunas pessoais no modelo de dados apontando para o inventário. Não duplique: o inventário é a fonte única de finalidade, base legal e retenção.
 
 ## Severidade
 

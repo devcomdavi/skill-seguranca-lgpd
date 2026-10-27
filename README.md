@@ -1,4 +1,4 @@
-# seguranca-lgpd-vibecode
+# skill-seguranca-lgpd
 
 Skill para agentes de código (Claude Code e compatíveis com `SKILL.md`) que leva segurança da informação e conformidade com a LGPD para sistemas vibecodados, isto é, sistemas construídos com ajuda de IA.
 
@@ -45,10 +45,10 @@ Os scripts usam só a biblioteca padrão do Python 3. Ferramentas externas (gitl
 
 ## Instalação
 
-**Claude Code:** copie a pasta para `~/.claude/skills/seguranca-lgpd-vibecode/` (uso pessoal) ou `.claude/skills/seguranca-lgpd-vibecode/` dentro do projeto.
+**Claude Code:** copie a pasta para `~/.claude/skills/skill-seguranca-lgpd/` (uso pessoal) ou `.claude/skills/skill-seguranca-lgpd/` dentro do projeto.
 
 ```bash
-git clone https://github.com/devcomdavi/seguranca-lgpd-vibecode ~/.claude/skills/seguranca-lgpd-vibecode
+git clone https://github.com/devcomdavi/skill-seguranca-lgpd ~/.claude/skills/skill-seguranca-lgpd
 ```
 
 **Claude (app):** baixe o repositório como `.zip` e envie em Configurações → Capacidades → Skills.
@@ -64,7 +64,7 @@ Basta pedir em linguagem natural, por exemplo: "audita a segurança e a LGPD des
 
 ## Sequência de skills
 
-Esta skill faz parte de uma sequência para construir sistemas **legais, documentados e funcionais**. Ela compartilha a pasta `docs/` e os identificadores (RF, RNF, UC, ADR) com a [documentacao-sistema](https://github.com/devcomdavi/claude-skill-documentacao-sistema) e mantém `docs/07-seguranca-privacidade/`.
+Esta skill faz parte de uma sequência para construir sistemas **legais, documentados e funcionais**. Ela compartilha a pasta `docs/` e os identificadores (RF, RNF, UC, ADR) com a [skill-documentacao-sistema](https://github.com/devcomdavi/skill-documentacao-sistema) e mantém `docs/07-seguranca-privacidade/`.
 
 ## Licença
 
